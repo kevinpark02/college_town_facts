@@ -1,8 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
+.body {
+    overflow-y: auto;
+    height: 100vh;
 }
 
 .main-header {
@@ -19,5 +17,22 @@
 
 .college-scroll {
     border: 1px solid black;
-    background: red;
+    background: #fff;
+    width: 450px;
+    z-index: 2;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.college-scroll ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.college-scroll li {
+    width: 350px;
+    height: 350px;
+    border: 1px black solid;
+    margin-bottom: 100px;
 }
