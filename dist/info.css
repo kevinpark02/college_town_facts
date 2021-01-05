@@ -13,11 +13,6 @@
     width: 900px;
 }
 
-.college-info h1 {
-    text-align: center;
-}
-
-
 .davis {
     display: none;
 }
@@ -56,4 +51,6 @@
 
 .appear {
     display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
