@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./college.css">
     <link rel="stylesheet" href="./info.css">
     <link rel="stylesheet" href="./reset.css">
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
     <script src="./main.js"></script>
 </head>
 <body class="body">
@@ -61,6 +62,39 @@
         <aside id="info" class="college-info">
             <div id="davis" class="davis">
                 <h1>Everything you need to know about UC Davis in one page!</h1>
+                <div id="container" style="width: 100%; height: 600px"></div>
+                    <script>
+                        anychart.onDocumentReady(function () {
+
+                            // set the data
+                            var data = {
+                                header: ["Name", "Death toll"],
+                                rows: [
+                                    ["San-Francisco (1906)", 1500],
+                                    ["Messina (1908)", 87000],
+                                    ["Ashgabat (1948)", 175000],
+                                    ["Chile (1960)", 10000],
+                                    ["Tian Shan (1976)", 242000],
+                                    ["Armenia (1988)", 25000],
+                                    ["Iran (1990)", 50000]
+                                ]
+                            };
+
+                            // create the chart
+                            var chart = anychart.column();
+
+                            // add the data
+                            chart.data(data);
+                            
+                            // set the chart title
+                            chart.title("The deadliest earthquakes in the XXth century");
+
+                            // draw
+                            chart.container("container");
+                            chart.draw();
+        
+                        });
+                    </script>
             </div>
             <div id="merced" class="merced">
                 <h1>Everything you need to know about UC Merced in one page!</h1>
