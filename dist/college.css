@@ -1,0 +1,104 @@
+/* College Sidebar */
+
+.college-scroll {
+    /* border: 1px solid black; */
+    background: #fff;
+    width: 450px;
+    z-index: 2;
+    margin-top: 30px;
+    margin-bottom: 400px;
+    margin-left: 30px;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    border-radius: 20px;
+    height: 6250px;
+}
+
+.college-scroll ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.college-scroll li {
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    margin-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.college-scroll li:last-child {
+    margin-bottom: 40px;
+}
+
+/* Logos */
+
+.college-scroll img {
+    border-radius: 20px;
+}
+
+.davis-logo {
+    margin-top: 10px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.merced-logo {
+    margin-top: 10px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.berkeley-logo {
+    margin-top: 10px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.sc-logo {
+    margin-top: 10px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.sb-logo {
+    margin-top: 10px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover
+}
+
+.la-logo {
+    margin-top: 10px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.riverside-logo {
+    margin-top: 10px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.irvine-logo {
+    margin-top: 10px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.sd-logo {
+    margin-top: 10px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}

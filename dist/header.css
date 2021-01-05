@@ -1,0 +1,27 @@
+/* Header */
+.body {
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    background: #efefef;
+    padding: 10px 0;
+    padding-left: 30px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Content */
+.content {
+    display: flex;
+}
