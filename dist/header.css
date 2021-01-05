@@ -24,3 +24,7 @@
 .content {
     display: flex;
 }
+
+.sticky + .content {
+  padding-top: 60px;
+}

@@ -1,0 +1,59 @@
+.college-info {
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 50px;
+    width: 900px;
+    height: 770px;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    border-radius: 20px;
+    position: fixed;
+    top: 79px;
+    left: 482px;
+    width: 900px;
+}
+
+.college-info h1 {
+    text-align: center;
+}
+
+
+.davis {
+    display: none;
+}
+
+.merced {
+    display: none;
+}
+
+.berkeley {
+    display: none;
+}
+
+.santacruz {
+    display: none;
+}
+
+.santabarbara {
+    display: none;
+}
+
+.ucla {
+    display: none;
+}
+
+.riverside {
+    display: none;
+}
+
+.irvine {
+    display: none;
+}
+
+.sandiego {
+    display: none;
+}
+
+.appear {
+    display: flex;
+}
