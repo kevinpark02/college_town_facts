@@ -40,3 +40,10 @@
 .btn-hide {
     display: none;
 }
+
+/* Toggle Button */
+.top-toggle-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

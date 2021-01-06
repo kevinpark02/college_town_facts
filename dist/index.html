@@ -16,7 +16,6 @@
     <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
     <script src="https://cdn.anychart.com/releases/8.0.0/themes/dark_earth.min.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/e01cc5d9d9.js" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
 </head>
 <body class="body">
     <header id="header" class="main-header">
@@ -67,42 +66,58 @@
         <aside id="info" class="college-info">
             <div id="davis" class="davis">
                 <h1>Everything you need to know about UC Davis in one page!</h1>
+                <div class="top-toggle-btns">
+                    <button class="davis-demo-btn">Demographics</button>
+                    <button class="davis-weather-btn">Check the Weather</button>
+                </div>
                 <div id="davis-container" style="width: 100%; height: 450px"></div>
-                    <script>
-                        anychart.onDocumentReady(function () {
-
-                            // set the data
-                            var data = {
-                                header: ["Ethnicity", "Number of People"],
-                                rows: [
-                                    ["African American / Black", 1138],
-                                    ["American Indian / Alaskan Native", 146],
-                                    ["Asian / Pacific Islander", 9780],
-                                    ["Hispanic", 6998],
-                                    ["White", 7077],
-                                    ["Race / Ethnicity Unknown", 654],
-                                    ["International", 5189]
-                                ]
-                            };
-
-                            // create the chart
-                            var chart = anychart.pie();
-                            chart.legend().position("right");
-                            chart.legend().itemsLayout("vertical");
-
-                            // add the data
-                            chart.data(data);
-                            
-                            // set the chart title
-                            chart.title("Undergraduate Profile: UC Davis Demographics");
-
-                            // draw
-                            chart.container("davis-container");
-                            chart.draw();
-        
-                        });
+                <script>
+                    anychart.onDocumentReady(function () {
+                        
+                        // set the data
+                        var data = {
+                            header: ["Ethnicity", "Number of People"],
+                            rows: [
+                                ["African American / Black", 1138],
+                                ["American Indian / Alaskan Native", 146],
+                                ["Asian / Pacific Islander", 9780],
+                                ["Hispanic", 6998],
+                                ["White", 7077],
+                                ["Race / Ethnicity Unknown", 654],
+                                ["International", 5189]
+                            ]
+                        };
+                        
+                        // create the chart
+                        var chart = anychart.pie();
+                        chart.legend().position("right");
+                        chart.legend().itemsLayout("vertical");
+                        
+                        // add the data
+                        chart.data(data);
+                        
+                        // set the chart title
+                        chart.title("Undergraduate Profile: UC Davis Demographics");
+                        
+                        // draw
+                        chart.container("davis-container");
+                        chart.draw();
+                        
+                    });
                     </script>
-                <!-- <div class="davis-weather"></div> -->
+
+                <div class="davis-weather-info">
+                    <h1>Davis, CA</h1>
+                    <h1 id="davis-w-desc"></h1>
+                    <h1 id="davis-w-temp"></h1>
+                    <img id="davis-w-icon">
+                    <ul id="davis-w-details" class="davis-weather-details">
+                        <li id="davis-w-humidity"></li>
+                        <li id="davis-w-feels-like"></li>
+                        <li id="davis-w-wind"></li>
+                    </ul>
+                </div>
+
                 <div class="davis-eatery">
                     <button class="davis-get-restaurants restaurant-btn">Find Places to Eat</button>
                     <ul class="davis-restaurants">
@@ -116,7 +131,7 @@
                             <a href="https://www.standupkabob.com" target="_blank">
                                 <img src="../src/image/ucdavis_kabob.jpg" alt="">
                             </a>
-                             <h3>Standup Kabob</h3>
+                            <h3>Standup Kabob</h3>
                         </li>
                         <li>
                             <a href="https://www.theburgerpatch.com" target="_blank">
@@ -135,7 +150,7 @@
                 <div id="merced-container" style="width: 100%; height: 450px"></div>
                 <script>
                     anychart.onDocumentReady(function () {
-
+                        
                         // set the data
                         var data = {
                             header: ["Name", "Death toll"],
@@ -149,24 +164,24 @@
                                 ["International", 639]
                             ]
                         };
-
+                        
                         // create the chart
                         var chart = anychart.pie();
                         chart.legend().position("right");
                         chart.legend().itemsLayout("vertical");
-
+                        
                         // add the data
                         chart.data(data);
-
+                        
                         // set the chart title
                         chart.title("Undergraduate Profile: UC Merced Demographics");
-
+                        
                         // draw
                         chart.container("merced-container");
                         chart.draw();
-
+                        
                     });
-                </script>
+                    </script>
                 <div class="merced-eatery">
                     <button class="merced-get-restaurants restaurant-btn">Find Places to Eat</button>
                     <ul class="merced-restaurants">
@@ -197,10 +212,10 @@
             <div id="berkeley" class="berkeley">
                 <h1>Everything you need to know about UC Berkeley in one page!</h1>
                 <div id="berkeley-container" style="width: 100%; height: 450px"></div>
-                    <script>
-                        anychart.onDocumentReady(function () {
-
-                            // set the data
+                <script>
+                    anychart.onDocumentReady(function () {
+                        
+                        // set the data
                             var data = {
                                 header: ["Name", "Death toll"],
                                 rows: [
@@ -213,24 +228,24 @@
                                     ["International", 3728]
                                 ]
                             };
-
+                            
                             // create the chart
                             var chart = anychart.pie();
-
+                            
                             // add the data
                             chart.data(data);
                             chart.legend().position("right");
                             chart.legend().itemsLayout("vertical");
-
+                            
                             // set the chart title
                             chart.title("Undergraduate Profile: UC Berkeley Demographics");
-
+                            
                             // draw
                             chart.container("berkeley-container");
                             chart.draw();
-
+                            
                         });
-                    </script>
+                        </script>
                     <div class="berkeley-eatery">
                         <button class="berkeley-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="berkeley-restaurants">
@@ -257,13 +272,13 @@
                             <i class="fab fa-yelp"></i>&nbsp;&nbsp;Yelp for more options near UC Berkeley!
                         </a>
                     </div>
-            </div>
-            <div id="santacruz" class="santacruz">
-                <h1>Everything you need to know about UCSC in one page!</h1>
-                <div id="sc-container" style="width: 100%; height: 450px"></div>
+                </div>
+                <div id="santacruz" class="santacruz">
+                    <h1>Everything you need to know about UCSC in one page!</h1>
+                    <div id="sc-container" style="width: 100%; height: 450px"></div>
                     <script>
                         anychart.onDocumentReady(function () {
-
+                            
                             // set the data
                             var data = {
                                 header: ["Name", "Death toll"],
@@ -277,24 +292,24 @@
                                     ["International", 1576]
                                 ]
                             };
-
+                            
                             // create the chart
                             var chart = anychart.pie();
                             chart.legend().position("right");
                             chart.legend().itemsLayout("vertical");
-
+                            
                             // add the data
                             chart.data(data);
-
+                            
                             // set the chart title
                             chart.title("Undergraduate Profile: UC Santa Cruz Demographics");
-
+                            
                             // draw
                             chart.container("sc-container");
                             chart.draw();
-
+                            
                         });
-                    </script>
+                        </script>
                     <div class="sc-eatery">
                         <button class="sc-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="sc-restaurants">
@@ -321,13 +336,13 @@
                             <i class="fab fa-yelp"></i>&nbsp;&nbsp;Yelp for more options near UCSC!
                         </a>
                     </div>
-            </div>
-            <div id="santabarbara" class="santabarbara">
-                <h1>Everything you need to know about UCSB in one page!</h1>
-                <div id="sb-container" style="width: 100%; height: 450px"></div>
+                </div>
+                <div id="santabarbara" class="santabarbara">
+                    <h1>Everything you need to know about UCSB in one page!</h1>
+                    <div id="sb-container" style="width: 100%; height: 450px"></div>
                     <script>
                         anychart.onDocumentReady(function () {
-
+                            
                             // set the data
                             var data = {
                                 header: ["Name", "Death toll"],
@@ -341,24 +356,24 @@
                                     ["International", 2853]
                                 ]
                             };
-
+                            
                             // create the chart
                             var chart = anychart.pie();
                             chart.legend().position("right");
                             chart.legend().itemsLayout("vertical");
-
+                            
                             // add the data
                             chart.data(data);
-
+                            
                             // set the chart title
                             chart.title("Undergraduate Profile: UC Santa Barbara Demographics");
-
+                            
                             // draw
                             chart.container("sb-container");
                             chart.draw();
-
+                            
                         });
-                    </script>
+                        </script>
                     <div class="sb-eatery">
                         <button class="sb-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="sb-restaurants">
@@ -385,13 +400,13 @@
                             <i class="fab fa-yelp"></i>&nbsp;&nbsp;Yelp for more options near UCSB!
                         </a>
                     </div>
-            </div>
-            <div id="ucla" class="ucla">
-                <h1>Everything you need to know about UCLA in one page!</h1>
-                <div id="la-container" style="width: 100%; height: 450px"></div>
+                </div>
+                <div id="ucla" class="ucla">
+                    <h1>Everything you need to know about UCLA in one page!</h1>
+                    <div id="la-container" style="width: 100%; height: 450px"></div>
                     <script>
                         anychart.onDocumentReady(function () {
-
+                            
                             // set the data
                             var data = {
                                 header: ["Name", "Death toll"],
@@ -405,24 +420,24 @@
                                     ["International", 3654]
                                 ]
                             };
-
+                            
                             // create the chart
                             var chart = anychart.pie();
                             chart.legend().position("right");
                             chart.legend().itemsLayout("vertical");
-
+                            
                             // add the data
                             chart.data(data);
-
+                            
                             // set the chart title
                             chart.title("Undergraduate Profile: UCLA Demographics");
-
+                            
                             // draw
                             chart.container("la-container");
                             chart.draw();
-
+                            
                         });
-                    </script>
+                        </script>
                     <div class="la-eatery">
                         <button class="la-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="la-restaurants">
@@ -449,13 +464,13 @@
                             <i class="fab fa-yelp"></i>&nbsp;&nbsp;Yelp for more options near UCLA!
                         </a>
                     </div>
-            </div>
-            <div id="riverside" class="riverside">
-                <h1>Everything you need to know about UCR in one page!</h1>
-                <div id="riverside-container" style="width: 100%; height: 450px"></div>
+                </div>
+                <div id="riverside" class="riverside">
+                    <h1>Everything you need to know about UCR in one page!</h1>
+                    <div id="riverside-container" style="width: 100%; height: 450px"></div>
                     <script>
                         anychart.onDocumentReady(function () {
-
+                            
                             // set the data
                             var data = {
                                 header: ["Name", "Death toll"],
@@ -469,24 +484,24 @@
                                     ["International", 763]
                                 ]
                             };
-
+                            
                             // create the chart
                             var chart = anychart.pie();
                             chart.legend().position("right");
                             chart.legend().itemsLayout("vertical");
-
+                            
                             // add the data
                             chart.data(data);
-
+                            
                             // set the chart title
                             chart.title("Undergraduate Profile: UC Riverside Demographics");
-
+                            
                             // draw
                             chart.container("riverside-container");
                             chart.draw();
-
+                            
                         });
-                    </script>
+                        </script>
                     <div class="riverside-eatery">
                         <button class="riverside-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="riverside-restaurants">
@@ -513,13 +528,13 @@
                             <i class="fab fa-yelp"></i>&nbsp;&nbsp;Yelp for more options near UC Riverside!
                         </a>
                     </div>
-            </div>
-            <div id="irvine" class="irvine">
-                <h1>Everything you need to know about UCI in one page!</h1>
-                <div id="irvine-container" style="width: 100%; height: 450px"></div>
+                </div>
+                <div id="irvine" class="irvine">
+                    <h1>Everything you need to know about UCI in one page!</h1>
+                    <div id="irvine-container" style="width: 100%; height: 450px"></div>
                     <script>
                         anychart.onDocumentReady(function () {
-
+                            
                             // set the data
                             var data = {
                                 header: ["Name", "Death toll"],
@@ -533,24 +548,24 @@
                                     ["International", 5050]
                                 ]
                             };
-
+                            
                             // create the chart
                             var chart = anychart.pie();
                             chart.legend().position("right");
                             chart.legend().itemsLayout("vertical");
-
+                            
                             // add the data
                             chart.data(data);
-
+                            
                             // set the chart title
                             chart.title("Undergraduate Profile: UC Irvine Demographics");
-
+                            
                             // draw
                             chart.container("irvine-container");
                             chart.draw();
-
+                            
                         });
-                    </script>
+                        </script>
                     <div class="irvine-eatery">
                         <button class="irvine-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="irvine-restaurants">
@@ -577,13 +592,13 @@
                             <i class="fab fa-yelp"></i>&nbsp;&nbsp;Yelp for more options near UC Irvine!
                         </a>
                     </div>
-            </div>
-            <div id="sandiego" class="sandiego">
-                <h1>Everything you need to know about UCSD in one page!</h1>
-                <div id="sd-container" style="width: 100%; height: 450px"></div>
+                </div>
+                <div id="sandiego" class="sandiego">
+                    <h1>Everything you need to know about UCSD in one page!</h1>
+                    <div id="sd-container" style="width: 100%; height: 450px"></div>
                     <script>
                         anychart.onDocumentReady(function () {
-
+                            
                             // set the data
                             var data = {
                                 header: ["Name", "Death toll"],
@@ -597,24 +612,24 @@
                                     ["International", 5583]
                                 ]
                             };
-
+                            
                             // create the chart
                             var chart = anychart.pie();
                             chart.legend().position("right");
                             chart.legend().itemsLayout("vertical");
-
+                            
                             // add the data
                             chart.data(data);
-
+                            
                             // set the chart title
                             chart.title("Undergraduate Profile: UCSD Demographics");
-
+                            
                             // draw
                             chart.container("sd-container");
                             chart.draw();
-
+                            
                         });
-                    </script>
+                        </script>
                     <div class="sd-eatery">
                         <button class="sd-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="sd-restaurants">
@@ -641,8 +656,10 @@
                             <i class="fab fa-yelp"></i>&nbsp;&nbsp;Yelp for more options near UCSD!
                         </a>
                     </div>
-            </div>
-        </aside>
-    </div>
-</body>
-</html>
+                </div>
+            </aside>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+    </html>
+    
