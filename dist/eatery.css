@@ -88,3 +88,325 @@
 .merced-restaurants li h3 {
     margin: 0 auto;
 }
+
+/* BERKELEY */
+.berkeley-eatery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    margin-top: 10px;
+    border: 1px black solid;
+    height: 330px;
+    width: 90%
+}
+
+.berkeley-get-restaurants {
+    margin: 0 auto;
+}
+
+.berkeley-eatery img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.berkeley-eatery img:hover { 
+    transform: rotate(2deg);
+}
+
+.berkeley-restaurants {
+    display: none;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.berkeley-restaurants li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.berkeley-restaurants li h3 {
+    margin: 0 auto;
+}
+
+/* SC */
+.sc-eatery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    margin-top: 10px;
+    border: 1px black solid;
+    height: 330px;
+    width: 90%
+}
+
+.sc-get-restaurants {
+    margin: 0 auto;
+}
+
+.sc-eatery img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sc-eatery img:hover { 
+    transform: rotate(2deg);
+}
+
+.sc-restaurants {
+    display: none;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.sc-restaurants li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sc-restaurants li h3 {
+    margin: 0 auto;
+}
+
+/* SB */
+.sb-eatery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    margin-top: 10px;
+    border: 1px black solid;
+    height: 330px;
+    width: 90%
+}
+
+.sb-get-restaurants {
+    margin: 0 auto;
+}
+
+.sb-eatery img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sb-eatery img:hover { 
+    transform: rotate(2deg);
+}
+
+.sb-restaurants {
+    display: none;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.sb-restaurants li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sb-restaurants li h3 {
+    margin: 0 auto;
+}
+
+/* LA */
+.la-eatery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    margin-top: 10px;
+    border: 1px black solid;
+    height: 330px;
+    width: 90%
+}
+
+.la-get-restaurants {
+    margin: 0 auto;
+}
+
+.la-eatery img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.la-eatery img:hover { 
+    transform: rotate(2deg);
+}
+
+.la-restaurants {
+    display: none;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.la-restaurants li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.la-restaurants li h3 {
+    margin: 0 auto;
+}
+
+/* RIVERSIDE */
+.riverside-eatery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    margin-top: 10px;
+    border: 1px black solid;
+    height: 330px;
+    width: 90%
+}
+
+.riverside-get-restaurants {
+    margin: 0 auto;
+}
+
+.riverside-eatery img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.riverside-eatery img:hover { 
+    transform: rotate(2deg);
+}
+
+.riverside-restaurants {
+    display: none;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.riverside-restaurants li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.riverside-restaurants li h3 {
+    margin: 0 auto;
+}
+
+/* IRVINE */
+.irvine-eatery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    margin-top: 10px;
+    border: 1px black solid;
+    height: 330px;
+    width: 90%
+}
+
+.irvine-get-restaurants {
+    margin: 0 auto;
+}
+
+.irvine-eatery img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.irvine-eatery img:hover { 
+    transform: rotate(2deg);
+}
+
+.irvine-restaurants {
+    display: none;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.irvine-restaurants li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.irvine-restaurants li h3 {
+    margin: 0 auto;
+}
+
+/* SD */
+.sd-eatery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    margin-top: 10px;
+    border: 1px black solid;
+    height: 330px;
+    width: 90%
+}
+
+.sd-get-restaurants {
+    margin: 0 auto;
+}
+
+.sd-eatery img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sd-eatery img:hover { 
+    transform: rotate(2deg);
+}
+
+.sd-restaurants {
+    display: none;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.sd-restaurants li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sd-restaurants li h3 {
+    margin: 0 auto;
+}
