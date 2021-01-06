@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./info.css">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./eatery.css">
+    <link rel="stylesheet" href="./utility.css">
     <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
     <script src="https://cdn.anychart.com/releases/8.0.0/themes/dark_earth.min.js" type="text/javascript"></script>
     <script src="./main.js"></script>
@@ -100,8 +101,27 @@
                         });
                     </script>
                 <div class="davis-eatery">
-                    <button class="davis-get-restaurants">Places to Eat</button>
-                    <ul class="davis-restaurants"></ul>
+                    <button class="davis-get-restaurants restaurant-btn">Find Places to Eat</button>
+                    <ul class="davis-restaurants">
+                        <li>
+                            <a href="https://www.cajun-feast.com" target="_blank">
+                                <img src="../src/image/ucdavis_cajun_feast.jpg" alt="">
+                            </a>
+                            <h3>Cajun Feast</h3>
+                        </li>
+                        <li>
+                            <a href="https://www.standupkabob.com" target="_blank">
+                                <img src="../src/image/ucdavis_kabob.jpg" alt="">
+                            </a>
+                             <h3>Standup Kabob</h3>
+                        </li>
+                        <li>
+                            <a href="https://www.theburgerpatch.com" target="_blank">
+                                <img src="../src/image/ucdavis_burger_patch.jpg" alt="">
+                            </a>
+                            <h3>Burger Patch</h3>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div id="merced" class="merced">
@@ -141,6 +161,29 @@
 
                     });
                 </script>
+                <div class="merced-eatery">
+                    <button class="merced-get-restaurants restaurant-btn">Find Places to Eat</button>
+                    <ul class="merced-restaurants">
+                        <li>
+                            <a href="https://www.cajun-feast.com" target="_blank">
+                                <img src="../src/image/ucdavis_kabob.jpg" alt="">
+                            </a>
+                            <h3>Merced 1</h3>
+                        </li>
+                        <li>
+                            <a href="https://www.standupkabob.com" target="_blank">
+                                <img src="../src/image/ucdavis_burger_patch.jpg" alt="">
+                            </a>
+                            <h3>Merced 2</h3>
+                        </li>
+                        <li>
+                            <a href="https://www.theburgerpatch.com" target="_blank">
+                                <img src="../src/image/ucdavis_cajun_feast.jpg" alt="">
+                            </a>
+                            <h3>Merced 3</h3>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div id="berkeley" class="berkeley">
                 <h1>Everything you need to know about UC Berkeley in one page!</h1>
@@ -209,7 +252,7 @@
                             chart.data(data);
 
                             // set the chart title
-                            chart.title("Undergraduate Profile: UC Berkeley Demographics");
+                            chart.title("Undergraduate Profile: UC Santa Cruz Demographics");
 
                             // draw
                             chart.container("sc-container");
@@ -247,7 +290,7 @@
                             chart.data(data);
 
                             // set the chart title
-                            chart.title("Undergraduate Profile: UC Berkeley Demographics");
+                            chart.title("Undergraduate Profile: UC Santa Barbara Demographics");
 
                             // draw
                             chart.container("sb-container");
@@ -285,7 +328,7 @@
                             chart.data(data);
 
                             // set the chart title
-                            chart.title("Undergraduate Profile: UC Berkeley Demographics");
+                            chart.title("Undergraduate Profile: UCLA Demographics");
 
                             // draw
                             chart.container("la-container");
@@ -323,7 +366,7 @@
                             chart.data(data);
 
                             // set the chart title
-                            chart.title("Undergraduate Profile: UC Berkeley Demographics");
+                            chart.title("Undergraduate Profile: UC Riverside Demographics");
 
                             // draw
                             chart.container("riverside-container");
@@ -361,7 +404,7 @@
                             chart.data(data);
 
                             // set the chart title
-                            chart.title("Undergraduate Profile: UC Berkeley Demographics");
+                            chart.title("Undergraduate Profile: UC Irvine Demographics");
 
                             // draw
                             chart.container("irvine-container");
@@ -399,7 +442,7 @@
                             chart.data(data);
 
                             // set the chart title
-                            chart.title("Undergraduate Profile: UC Berkeley Demographics");
+                            chart.title("Undergraduate Profile: UCSD Demographics");
 
                             // draw
                             chart.container("sd-container");

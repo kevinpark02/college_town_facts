@@ -1,6 +1,90 @@
+/* DAVIS */
 .davis-eatery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
     margin-top: 10px;
     border: 1px black solid;
     height: 330px;
     width: 90%
+}
+
+.davis-get-restaurants {
+    margin: 0 auto;
+}
+
+.davis-eatery img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.davis-eatery img:hover { 
+    transform: rotate(2deg);
+}
+
+.davis-restaurants {
+    display: none;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.davis-restaurants li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.davis-restaurants li h3 {
+    margin: 0 auto;
+}
+/* MERCED */
+.merced-eatery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    margin-top: 10px;
+    border: 1px black solid;
+    height: 330px;
+    width: 90%
+}
+
+.merced-get-restaurants {
+    margin: 0 auto;
+}
+
+.merced-eatery img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.merced-eatery img:hover { 
+    transform: rotate(2deg);
+}
+
+.merced-restaurants {
+    display: none;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.merced-restaurants li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.merced-restaurants li h3 {
+    margin: 0 auto;
 }
