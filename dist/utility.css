@@ -29,6 +29,10 @@
     
 }
 
+.yelp-appear {
+    display: block;
+}
+
 .btn-appear {
     display: flex;
 }
