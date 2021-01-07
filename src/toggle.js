@@ -11,6 +11,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
     document.querySelector(".sc-demo-btn").addEventListener('click', showScDemo);
     document.querySelector(".sc-weather-btn").addEventListener('click', showScWeather);
 
+    document.querySelector(".sb-demo-btn").addEventListener('click', showSbDemo);
+    document.querySelector(".sb-weather-btn").addEventListener('click', showSbWeather);
+
+    document.querySelector(".la-demo-btn").addEventListener('click', showLaDemo);
+    document.querySelector(".la-weather-btn").addEventListener('click', showLaWeather);
+
     function showDavisDemo() {
         let davisDemo = document.getElementById('davis-container');
             davisDemo.classList.remove("top-hide")
@@ -64,6 +70,34 @@ window.addEventListener("DOMContentLoaded", (event) => {
         let davisDemo = document.getElementById("sc-container");
             davisDemo.classList.add("top-hide");
         let davisWeather = document.querySelector('.sc-weather-info');
+            davisWeather.classList.add("top-show");
+    }
+
+    function showSbDemo() {
+        let davisDemo = document.getElementById('sb-container');
+            davisDemo.classList.remove("top-hide")
+        let davisWeather = document.querySelector('.sb-weather-info');
+            davisWeather.classList.remove("top-show")
+    }
+    
+    function showSbWeather() {
+        let davisDemo = document.getElementById("sb-container");
+            davisDemo.classList.add("top-hide");
+        let davisWeather = document.querySelector('.sb-weather-info');
+            davisWeather.classList.add("top-show");
+    }
+
+    function showLaDemo() {
+        let davisDemo = document.getElementById('la-container');
+            davisDemo.classList.remove("top-hide")
+        let davisWeather = document.querySelector('.la-weather-info');
+            davisWeather.classList.remove("top-show")
+    }
+    
+    function showLaWeather() {
+        let davisDemo = document.getElementById("la-container");
+            davisDemo.classList.add("top-hide");
+        let davisWeather = document.querySelector('.la-weather-info');
             davisWeather.classList.add("top-show");
     }
 })

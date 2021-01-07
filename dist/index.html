@@ -384,7 +384,11 @@
                 </div>
                 <div id="santabarbara" class="santabarbara">
                     <h1>Everything you need to know about UCSB in one page!</h1>
-                    <div id="sb-container" style="width: 100%; height: 450px"></div>
+                    <div class="top-toggle-btns">
+                        <button class="sb-demo-btn">Demographics</button>
+                        <button class="sb-weather-btn">Check the Weather</button>
+                    </div>
+                    <div id="sb-container" style="width: 100%; height: 400px"></div>
                     <script>
                         anychart.onDocumentReady(function () {
                             
@@ -419,6 +423,17 @@
                             
                         });
                         </script>
+                        <div class="sb-weather-info">
+                            <h1>Santa Barbara, CA</h1>
+                            <h1 id="sb-w-desc"></h1>
+                            <h1 id="sb-w-temp"></h1>
+                            <img id="sb-w-icon">
+                            <ul id="sb-w-details" class="sb-weather-details">
+                                <li id="sb-w-humidity"></li>
+                                <li id="sb-w-feels-like"></li>
+                                <li id="sb-w-wind"></li>
+                            </ul>
+                        </div>
                     <div class="sb-eatery">
                         <button class="sb-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="sb-restaurants">
@@ -448,6 +463,10 @@
                 </div>
                 <div id="ucla" class="ucla">
                     <h1>Everything you need to know about UCLA in one page!</h1>
+                    <div class="top-toggle-btns">
+                        <button class="la-demo-btn">Demographics</button>
+                        <button class="la-weather-btn">Check the Weather</button>
+                    </div>
                     <div id="la-container" style="width: 100%; height: 450px"></div>
                     <script>
                         anychart.onDocumentReady(function () {
@@ -483,6 +502,17 @@
                             
                         });
                         </script>
+                        <div class="la-weather-info">
+                            <h1>Los Angeles, CA</h1>
+                            <h1 id="la-w-desc"></h1>
+                            <h1 id="la-w-temp"></h1>
+                            <img id="la-w-icon">
+                            <ul id="la-w-details" class="la-weather-details">
+                                <li id="la-w-humidity"></li>
+                                <li id="la-w-feels-like"></li>
+                                <li id="la-w-wind"></li>
+                            </ul>
+                        </div>
                     <div class="la-eatery">
                         <button class="la-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="la-restaurants">
