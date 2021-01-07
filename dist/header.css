@@ -9,9 +9,18 @@
     justify-content: center;
     align-items: flex-start;
     width: 100vw;
-    background: #efefef;
+    background: #ffd500;
     padding: 10px 0;
     padding-left: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.main-header h1 h3 {
+    color: #02075d;
 }
 
 .sticky {
@@ -23,6 +32,7 @@
 /* Content */
 .content {
     display: flex;
+    background: #fbf5ee;
 }
 
 .sticky + .content {

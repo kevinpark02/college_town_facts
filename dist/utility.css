@@ -8,7 +8,8 @@
     font-weight: bolder;
     border-radius: 10px;
     cursor: pointer;
-    padding: 0 10px
+    padding: 0 10px;
+    outline: 0;
 }
 
 .restaurant-btn:hover {
@@ -46,6 +47,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .top-show {
@@ -54,4 +57,28 @@
 
 .top-hide {
     display: none;
+}
+
+.demo-btn {
+    height: 30px;
+    margin-right: 50px;
+    color: #fff;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: none;
+    background-image: linear-gradient(to bottom right, #56b8f8,#0277bd);
+    outline: 0;
+}
+
+.weather-btn {
+    height: 30px;
+    padding: 0 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: none;
+    background-image: linear-gradient(to bottom right, #56b8f8,#0277bd);
+    outline: 0; 
 }
