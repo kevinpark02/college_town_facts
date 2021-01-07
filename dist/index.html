@@ -70,7 +70,7 @@
                     <button class="davis-demo-btn">Demographics</button>
                     <button class="davis-weather-btn">Check the Weather</button>
                 </div>
-                <div id="davis-container" style="width: 100%; height: 450px"></div>
+                <div id="davis-container" style="width: 100%; height: 400px"></div>
                 <script>
                     anychart.onDocumentReady(function () {
                         
@@ -147,7 +147,11 @@
             </div>
             <div id="merced" class="merced">
                 <h1>Everything you need to know about UC Merced in one page!</h1>
-                <div id="merced-container" style="width: 100%; height: 450px"></div>
+                <div class="top-toggle-btns">
+                    <button class="merced-demo-btn">Demographics</button>
+                    <button class="merced-weather-btn">Check the Weather</button>
+                </div>
+                <div id="merced-container" style="width: 100%; height: 400px"></div>
                 <script>
                     anychart.onDocumentReady(function () {
                         
@@ -182,6 +186,17 @@
                         
                     });
                     </script>
+                <div class="merced-weather-info">
+                    <h1>Merced, CA</h1>
+                    <h1 id="merced-w-desc"></h1>
+                    <h1 id="merced-w-temp"></h1>
+                    <img id="merced-w-icon">
+                    <ul id="merced-w-details" class="merced-weather-details">
+                        <li id="merced-w-humidity"></li>
+                        <li id="merced-w-feels-like"></li>
+                        <li id="merced-w-wind"></li>
+                    </ul>
+                </div>
                 <div class="merced-eatery">
                     <button class="merced-get-restaurants restaurant-btn">Find Places to Eat</button>
                     <ul class="merced-restaurants">
@@ -211,7 +226,11 @@
             </div>
             <div id="berkeley" class="berkeley">
                 <h1>Everything you need to know about UC Berkeley in one page!</h1>
-                <div id="berkeley-container" style="width: 100%; height: 450px"></div>
+                <div class="top-toggle-btns">
+                    <button class="berkeley-demo-btn">Demographics</button>
+                    <button class="berkeley-weather-btn">Check the Weather</button>
+                </div>
+                <div id="berkeley-container" style="width: 100%; height: 400px"></div>
                 <script>
                     anychart.onDocumentReady(function () {
                         
@@ -246,6 +265,17 @@
                             
                         });
                         </script>
+                        <div class="berkeley-weather-info">
+                            <h1>Berkeley, CA</h1>
+                            <h1 id="berkeley-w-desc"></h1>
+                            <h1 id="berkeley-w-temp"></h1>
+                            <img id="berkeley-w-icon">
+                            <ul id="berkeley-w-details" class="berkeley-weather-details">
+                                <li id="berkeley-w-humidity"></li>
+                                <li id="berkeley-w-feels-like"></li>
+                                <li id="berkeley-w-wind"></li>
+                            </ul>
+                        </div>
                     <div class="berkeley-eatery">
                         <button class="berkeley-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="berkeley-restaurants">
@@ -275,7 +305,11 @@
                 </div>
                 <div id="santacruz" class="santacruz">
                     <h1>Everything you need to know about UCSC in one page!</h1>
-                    <div id="sc-container" style="width: 100%; height: 450px"></div>
+                    <div class="top-toggle-btns">
+                        <button class="sc-demo-btn">Demographics</button>
+                        <button class="sc-weather-btn">Check the Weather</button>
+                    </div>
+                    <div id="sc-container" style="width: 100%; height: 400px"></div>
                     <script>
                         anychart.onDocumentReady(function () {
                             
@@ -310,6 +344,17 @@
                             
                         });
                         </script>
+                        <div class="sc-weather-info">
+                            <h1>Santa Cruz, CA</h1>
+                            <h1 id="sc-w-desc"></h1>
+                            <h1 id="sc-w-temp"></h1>
+                            <img id="sc-w-icon">
+                            <ul id="sc-w-details" class="sc-weather-details">
+                                <li id="sc-w-humidity"></li>
+                                <li id="sc-w-feels-like"></li>
+                                <li id="sc-w-wind"></li>
+                            </ul>
+                        </div>
                     <div class="sc-eatery">
                         <button class="sc-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="sc-restaurants">

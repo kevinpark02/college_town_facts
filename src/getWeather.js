@@ -1,7 +1,13 @@
 import Weather from "./weather";
-import DavisUI from "./uiWeather";
+import DavisUI from "./davisUi";
+import MercedUI from "./mercedUi";
+import BerkeleyUI from "./berkeleyUi";
+import ScUI from "./scUi";
 
-const davisUi = new DavisUI()
+const davisUi = new DavisUI();
+const mercedUi = new MercedUI();
+const berkeleyUi = new BerkeleyUI();
+const scUi = new ScUI();
 
 const davisWeather = new Weather("95616");
 const mercedWeather = new Weather("95344");
@@ -24,19 +30,19 @@ function getWeather() {
         
         mercedWeather.getWeather()
             .then(results => {
-                console.log(results);
+                mercedUi.paint(results)
             })
             .catch(err => console.log(err))
         
         berkeleyWeather.getWeather()
             .then(results => {
-                console.log(results);
+                berkeleyUi.paint(results);
             })
             .catch(err => console.log(err))
         
         scWeather.getWeather()
             .then(results => {
-                console.log(results);
+                scUi.paint(results);
             })
             .catch(err => console.log(err))
         

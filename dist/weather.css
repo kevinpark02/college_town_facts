@@ -1,18 +1,11 @@
-/* .davis-weather-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 450px;
-    width: 100%;
-    border: black 1px solid;
-} */
+/* DAVIS */
 
 .davis-weather-info {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 350px;
+    height: 348px;
     padding-top: 20px;
     background-image: linear-gradient(to bottom right, #56b8f8,#0277bd);
     border-radius: 10px;;
@@ -40,6 +33,138 @@
 }
 
 .davis-weather-details li {
+    width: 100%;
+    border-bottom: 1px dotted #a9a9a9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 19px;
+}
+
+/* MERCED */
+
+.merced-weather-info {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 348px;
+    padding-top: 20px;
+    background-image: linear-gradient(to bottom right, #56b8f8,#0277bd);
+    border-radius: 10px;;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    width: 65%;
+    margin-top: 30px; 
+}
+
+.merced-weather-info h1:nth-child(odd) {
+    color: #fff;
+}
+
+.merced-weather-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 65%;
+    height: 200px;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    background: #fff;
+    border-radius: 10px;
+}
+
+.merced-weather-details li {
+    width: 100%;
+    border-bottom: 1px dotted #a9a9a9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 19px;
+}
+
+/* BERKELEY */
+
+.berkeley-weather-info {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 348px;
+    padding-top: 20px;
+    background-image: linear-gradient(to bottom right, #56b8f8,#0277bd);
+    border-radius: 10px;;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    width: 65%;
+    margin-top: 30px; 
+}
+
+.berkeley-weather-info h1:nth-child(odd) {
+    color: #fff;
+}
+
+.berkeley-weather-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 65%;
+    height: 200px;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    background: #fff;
+    border-radius: 10px;
+}
+
+.berkeley-weather-details li {
+    width: 100%;
+    border-bottom: 1px dotted #a9a9a9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 19px;
+}
+
+/* SANTA CRUZ */
+
+.sc-weather-info {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 348px;
+    padding-top: 20px;
+    background-image: linear-gradient(to bottom right, #56b8f8,#0277bd);
+    border-radius: 10px;;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    width: 65%;
+    margin-top: 30px; 
+}
+
+.sc-weather-info h1:nth-child(odd) {
+    color: #fff;
+}
+
+.sc-weather-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 65%;
+    height: 200px;
+    border: 1px #e2e1e1 solid;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.15);
+    background: #fff;
+    border-radius: 10px;
+}
+
+.sc-weather-details li {
     width: 100%;
     border-bottom: 1px dotted #a9a9a9;
     display: flex;
