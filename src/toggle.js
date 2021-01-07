@@ -29,15 +29,57 @@ window.addEventListener("DOMContentLoaded", (event) => {
     function showDavisDemo() {
         let davisDemo = document.getElementById('davis-container');
             davisDemo.classList.remove("top-hide")
+
+            let op = 0.01;
+            let timer = setInterval(function() {
+                if(op >= 1) {
+                    clearInterval(timer);
+                }
+                davisDemo.style.opacity = op;
+                davisDemo.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                op += op * 0.05;
+            }, 10);
+
         let davisWeather = document.querySelector('.davis-weather-info');
-            davisWeather.classList.remove("top-show")
+        
+        let op2 = 1;
+        let timer2 = setInterval(function(){
+            if(op2 <= 0.01) {
+                clearInterval(timer2);
+            }
+            davisWeather.style.opacity = op2;
+            davisWeather.style.filter = 'alpha(opacity=' + op2 * 100 + ')';
+            op2 -= op2 * 0.05;
+        }, 10);
+        davisWeather.classList.remove("top-show")
     }
     
     function showDavisWeather() {
         let davisDemo = document.getElementById("davis-container");
-            davisDemo.classList.add("top-hide");
+        
+        let op2 = 1;
+        let timer2 = setInterval(function(){
+            if(op2 <= 0.01) {
+                clearInterval(timer2);
+            }
+            davisWeather.style.opacity = op2;
+            davisWeather.style.filter = 'alpha(opacity=' + op2 * 100 + ')';
+            op2 -= op2 * 0.05;
+        }, 10);
+        davisDemo.classList.add("top-hide");
+        
         let davisWeather = document.querySelector('.davis-weather-info');
             davisWeather.classList.add("top-show");
+
+            let op = 0.01;
+            let timer = setInterval(function() {
+                if(op >= 1) {
+                    clearInterval(timer);
+                }
+                davisWeather.style.opacity = op;
+                davisWeather.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                op += op * 0.05;
+            }, 10);
     }
 
     function showMercedDemo() {
