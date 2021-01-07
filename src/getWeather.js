@@ -6,6 +6,8 @@ import ScUI from "./scUi";
 import SbUI from "./sbUi";
 import LaUI from "./laUi";
 import RiversideUI from "./riversideUi";
+import IrvineUI from "./irvineUi";
+import SdUI from "./sdUi";
 
 const davisUi = new DavisUI();
 const mercedUi = new MercedUI();
@@ -14,6 +16,8 @@ const scUi = new ScUI();
 const sbUi = new SbUI();
 const laUi = new LaUI();
 const riversideUi = new RiversideUI();
+const irvineUi = new IrvineUI();
+const sdUi = new SdUI();
 
 const davisWeather = new Weather("95616");
 const mercedWeather = new Weather("95344");
@@ -72,13 +76,13 @@ function getWeather() {
         
         irvineWeather.getWeather()
             .then(results => {
-                console.log(results);
+                irvineUi.paint(results)
             })
             .catch(err => console.log(err))
         
         sdWeather.getWeather()
             .then(results => {
-                console.log(results);
+                sdUi.paint(results)
             })
             .catch(err => console.log(err))
 }

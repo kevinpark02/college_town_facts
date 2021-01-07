@@ -20,6 +20,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
     document.querySelector(".riverside-demo-btn").addEventListener('click', showRiversideDemo);
     document.querySelector(".riverside-weather-btn").addEventListener('click', showRiversideWeather);
 
+    document.querySelector(".irvine-demo-btn").addEventListener('click', showIrvineDemo);
+    document.querySelector(".irvine-weather-btn").addEventListener('click', showIrvineWeather);
+
+    document.querySelector(".sd-demo-btn").addEventListener('click', showSdDemo);
+    document.querySelector(".sd-weather-btn").addEventListener('click', showSdWeather);
 
     function showDavisDemo() {
         let davisDemo = document.getElementById('davis-container');
@@ -116,6 +121,34 @@ window.addEventListener("DOMContentLoaded", (event) => {
         let davisDemo = document.getElementById("riverside-container");
             davisDemo.classList.add("top-hide");
         let davisWeather = document.querySelector('.riverside-weather-info');
+            davisWeather.classList.add("top-show");
+    }
+
+    function showIrvineDemo() {
+        let davisDemo = document.getElementById('irvine-container');
+            davisDemo.classList.remove("top-hide")
+        let davisWeather = document.querySelector('.irvine-weather-info');
+            davisWeather.classList.remove("top-show")
+    }
+    
+    function showIrvineWeather() {
+        let davisDemo = document.getElementById("irvine-container");
+            davisDemo.classList.add("top-hide");
+        let davisWeather = document.querySelector('.irvine-weather-info');
+            davisWeather.classList.add("top-show");
+    }
+
+    function showSdDemo() {
+        let davisDemo = document.getElementById('sd-container');
+            davisDemo.classList.remove("top-hide")
+        let davisWeather = document.querySelector('.sd-weather-info');
+            davisWeather.classList.remove("top-show")
+    }
+    
+    function showSdWeather() {
+        let davisDemo = document.getElementById("sd-container");
+            davisDemo.classList.add("top-hide");
+        let davisWeather = document.querySelector('.sd-weather-info');
             davisWeather.classList.add("top-show");
     }
 })

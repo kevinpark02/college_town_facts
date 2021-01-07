@@ -621,7 +621,11 @@
                 </div>
                 <div id="irvine" class="irvine">
                     <h1>Everything you need to know about UCI in one page!</h1>
-                    <div id="irvine-container" style="width: 100%; height: 450px"></div>
+                    <div class="top-toggle-btns">
+                        <button class="irvine-demo-btn">Demographics</button>
+                        <button class="irvine-weather-btn">Check the Weather</button>
+                    </div>
+                    <div id="irvine-container" style="width: 100%; height: 400px"></div>
                     <script>
                         anychart.onDocumentReady(function () {
                             
@@ -656,6 +660,17 @@
                             
                         });
                         </script>
+                        <div class="irvine-weather-info">
+                            <h1>Irvine, CA</h1>
+                            <h1 id="irvine-w-desc"></h1>
+                            <h1 id="irvine-w-temp"></h1>
+                            <img id="irvine-w-icon">
+                            <ul id="irvine-w-details" class="irvine-weather-details">
+                                <li id="irvine-w-humidity"></li>
+                                <li id="irvine-w-feels-like"></li>
+                                <li id="irvine-w-wind"></li>
+                            </ul>
+                        </div>
                     <div class="irvine-eatery">
                         <button class="irvine-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="irvine-restaurants">
@@ -685,7 +700,11 @@
                 </div>
                 <div id="sandiego" class="sandiego">
                     <h1>Everything you need to know about UCSD in one page!</h1>
-                    <div id="sd-container" style="width: 100%; height: 450px"></div>
+                    <div class="top-toggle-btns">
+                        <button class="sd-demo-btn">Demographics</button>
+                        <button class="sd-weather-btn">Check the Weather</button>
+                    </div>
+                    <div id="sd-container" style="width: 100%; height: 400px"></div>
                     <script>
                         anychart.onDocumentReady(function () {
                             
@@ -720,6 +739,17 @@
                             
                         });
                         </script>
+                        <div class="sd-weather-info">
+                            <h1>San Diego, CA</h1>
+                            <h1 id="sd-w-desc"></h1>
+                            <h1 id="sd-w-temp"></h1>
+                            <img id="sd-w-icon">
+                            <ul id="sd-w-details" class="sd-weather-details">
+                                <li id="sd-w-humidity"></li>
+                                <li id="sd-w-feels-like"></li>
+                                <li id="sd-w-wind"></li>
+                            </ul>
+                        </div>
                     <div class="sd-eatery">
                         <button class="sd-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="sd-restaurants">
