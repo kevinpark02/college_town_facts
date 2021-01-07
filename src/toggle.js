@@ -16,6 +16,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     document.querySelector(".la-demo-btn").addEventListener('click', showLaDemo);
     document.querySelector(".la-weather-btn").addEventListener('click', showLaWeather);
+    
+    document.querySelector(".riverside-demo-btn").addEventListener('click', showRiversideDemo);
+    document.querySelector(".riverside-weather-btn").addEventListener('click', showRiversideWeather);
+
 
     function showDavisDemo() {
         let davisDemo = document.getElementById('davis-container');
@@ -98,6 +102,20 @@ window.addEventListener("DOMContentLoaded", (event) => {
         let davisDemo = document.getElementById("la-container");
             davisDemo.classList.add("top-hide");
         let davisWeather = document.querySelector('.la-weather-info');
+            davisWeather.classList.add("top-show");
+    }
+
+    function showRiversideDemo() {
+        let davisDemo = document.getElementById('riverside-container');
+            davisDemo.classList.remove("top-hide")
+        let davisWeather = document.querySelector('.riverside-weather-info');
+            davisWeather.classList.remove("top-show")
+    }
+    
+    function showRiversideWeather() {
+        let davisDemo = document.getElementById("riverside-container");
+            davisDemo.classList.add("top-hide");
+        let davisWeather = document.querySelector('.riverside-weather-info');
             davisWeather.classList.add("top-show");
     }
 })

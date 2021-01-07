@@ -542,7 +542,11 @@
                 </div>
                 <div id="riverside" class="riverside">
                     <h1>Everything you need to know about UCR in one page!</h1>
-                    <div id="riverside-container" style="width: 100%; height: 450px"></div>
+                    <div class="top-toggle-btns">
+                        <button class="riverside-demo-btn">Demographics</button>
+                        <button class="riverside-weather-btn">Check the Weather</button>
+                    </div>
+                    <div id="riverside-container" style="width: 100%; height: 400px"></div>
                     <script>
                         anychart.onDocumentReady(function () {
                             
@@ -577,6 +581,17 @@
                             
                         });
                         </script>
+                        <div class="riverside-weather-info">
+                            <h1>Riverside, CA</h1>
+                            <h1 id="riverside-w-desc"></h1>
+                            <h1 id="riverside-w-temp"></h1>
+                            <img id="riverside-w-icon">
+                            <ul id="riverside-w-details" class="riverside-weather-details">
+                                <li id="riverside-w-humidity"></li>
+                                <li id="riverside-w-feels-like"></li>
+                                <li id="riverside-w-wind"></li>
+                            </ul>
+                        </div>
                     <div class="riverside-eatery">
                         <button class="riverside-get-restaurants restaurant-btn">Find Places to Eat</button>
                         <ul class="riverside-restaurants">
