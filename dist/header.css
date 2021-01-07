@@ -19,7 +19,11 @@
     z-index: 100;
 }
 
-.main-header h1 h3 {
+.main-header h1 {
+    color: #02075d;
+}
+
+.main-header h3 {
     color: #02075d;
 }
 
