@@ -38,7 +38,7 @@
 }
 
 .side-icon img:hover {
-    
+
 }
 
 .side-icon p {
@@ -50,6 +50,7 @@
     background: #585858;
     padding: 3px;
     text-align: center;
+    border-radius: 5px;
 }
 
 .highlight {
