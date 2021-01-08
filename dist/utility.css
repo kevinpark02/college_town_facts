@@ -17,7 +17,7 @@
 
 .restaurant-btn:hover, .restaurant-btn:focus {
   color: rgb(255, 220, 103);
-  transform: translateY(-6px);
+  transform: translateY(-3px);
 }
 
 button::after {
