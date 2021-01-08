@@ -41,4 +41,4 @@ The project uses the following technologies:
 * I created a user interface (UI) class for each school, which uses the weather information and displays them on the browser.
     <img src="./src/image/readme_ui.png">
 * The combination of weather class and the UI classes are used to display the weather information.
-    <img src="./src/image/readme_weather_paint.png>
+    <img src="./src/image/readme_weather_paint.png">
