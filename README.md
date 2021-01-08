@@ -28,4 +28,4 @@ The project uses the following technologies:
 * `Webpack` for bundling JS files
 
 I created a scrollFunction that is activated once the user begins to scroll. 
-`window.onscroll = function () { scrollFunction(); };`
+<img src="./src/image/readme_onscroll_snippet.png">
