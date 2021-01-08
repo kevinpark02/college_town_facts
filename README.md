@@ -27,5 +27,7 @@ The project uses the following technologies:
 * `OpenWeatherMap`to get live weather updates
 * `Webpack` for bundling JS files
 
-I created a scrollFunction that is activated once the user begins to scroll. 
-<img src="./src/image/readme_onscroll_snippet.png">
+* I created a scrollFunction that is activated once the user begins to scroll. 
+    <img src="./src/image/readme_onscroll_snippet.png">
+* The scrollFunction first declares various components of each school, and I achieved that by using getElementById or querySelector as shown below:
+    <img src="./src/image/readme_declare.png">
