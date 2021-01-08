@@ -33,4 +33,4 @@ The project uses the following technologies:
 * The scrollFunction first declares various components of each school, and I achieved that by using getElementById or querySelector as shown below:
     <img src="./src/image/readme_declare.png">
 * I kept track of the scrollTop value to either add or remove a class that shows the component, which was initially hidden when the page was laoded.
-    <img src=".src/image/readme_track.png">
+    <img src="./src/image/readme_track.png">
