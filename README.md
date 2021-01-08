@@ -12,4 +12,20 @@ Here is a link to the live project: https://kevinpark02.github.io/college_town_f
 
 # Functionality & MVP
 Users are able to: 
--[] 
+* Scroll through the visualizations (9 slides)
+* Hover over each of the charts to see more detailed information about the demographics
+* Toggle between demographics chart and thelive weather chart
+* Click on "Find Places to Eat" button to look for places to eat
+* Hover over school icons to to the right to see general details about each school
+* Toggle between visualizations of each school by using the navigation bar to the right
+
+# Architecture and Technologies
+The project uses the following technologies:
+
+* `JavaScript` for scrolling and updating the displayed visualization correctly depending on the location of the website
+* `anychart` for data visualization
+* `OpenWeatherMap`to get live weather updates
+* `Webpack` for bundling JS files
+
+I created a scrollFunction that is activated once the user begins to scroll. 
+`window.onscroll = function () { scrollFunction(); };`
