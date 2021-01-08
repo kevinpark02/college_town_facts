@@ -29,17 +29,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-size: 25px;
+
+    position: relative;
 }
 
 .college-scroll li:last-child {
     margin-bottom: 40px;
 }
 
+.college-scroll p {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 350px;
+    border: 1px black solid;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 1s linear; 
+    transition: visibility 0s, opacity 1s linear;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.college-scroll p:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
 /* Logos */
 
 .college-scroll img {
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .davis-logo {
