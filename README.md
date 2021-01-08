@@ -1,3 +1,6 @@
+# UC College Town Facts
+<img src="./src/image/readme_show.gif">
+
 ## Table of contents
 * Background and overview
 * Project link
