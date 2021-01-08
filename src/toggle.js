@@ -62,8 +62,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
             if(op2 <= 0.01) {
                 clearInterval(timer2);
             }
-            davisWeather.style.opacity = op2;
-            davisWeather.style.filter = 'alpha(opacity=' + op2 * 100 + ')';
+            davisDemo.style.opacity = op2;
+            davisDemo.style.filter = 'alpha(opacity=' + op2 * 100 + ')';
             op2 -= op2 * 0.05;
         }, 10);
         davisDemo.classList.add("top-hide");
@@ -83,114 +83,450 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
 
     function showMercedDemo() {
-        let davisDemo = document.getElementById('merced-container');
-            davisDemo.classList.remove("top-hide")
-        let davisWeather = document.querySelector('.merced-weather-info');
-            davisWeather.classList.remove("top-show")
+        let mercedDemo = document.getElementById('merced-container');
+            mercedDemo.classList.remove("top-hide")
+
+            let op = 0.01;
+            let timer = setInterval(function() {
+                if(op >= 1) {
+                    clearInterval(timer);
+                }
+                mercedDemo.style.opacity = op;
+                mercedDemo.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                op += op * 0.05;
+            }, 10);
+
+        let mercedWeather = document.querySelector('.merced-weather-info');
+        
+        let op2 = 1;
+        let timer2 = setInterval(function(){
+            if(op2 <= 0.01) {
+                clearInterval(timer2);
+            }
+            mercedWeather.style.opacity = op2;
+            mercedWeather.style.filter = 'alpha(opacity=' + op2 * 100 + ')';
+            op2 -= op2 * 0.05;
+        }, 10);
+        
+        mercedWeather.classList.remove("top-show")
     }
     
     function showMercedWeather() {
-        let davisDemo = document.getElementById("merced-container");
-            davisDemo.classList.add("top-hide");
-        let davisWeather = document.querySelector('.merced-weather-info');
-            davisWeather.classList.add("top-show");
+        let mercedDemo = document.getElementById("merced-container");
+        
+        let op2 = 1;
+        let timer2 = setInterval(function(){
+            if(op2 <= 0.01) {
+                clearInterval(timer2);
+            }
+            mercedDemo.style.opacity = op2;
+            mercedDemo.style.filter = 'alpha(opacity=' + op2 * 100 + ')';
+            op2 -= op2 * 0.05;
+        }, 10);
+        
+        mercedDemo.classList.add("top-hide");
+        
+        let mercedWeather = document.querySelector('.merced-weather-info');
+            mercedWeather.classList.add("top-show");
+
+        let op = 0.01;
+        let timer = setInterval(function() {
+            if(op >= 1) {
+                clearInterval(timer);
+            }
+            mercedWeather.style.opacity = op;
+            mercedWeather.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op += op * 0.05;
+        }, 10);
     }
 
     function showBerkeleyDemo() {
-        let davisDemo = document.getElementById('berkeley-container');
-            davisDemo.classList.remove("top-hide")
-        let davisWeather = document.querySelector('.berkeley-weather-info');
-            davisWeather.classList.remove("top-show")
+        let berkeleyDemo = document.getElementById('berkeley-container');
+            berkeleyDemo.classList.remove("top-hide")
+
+            let op = 0.01;
+            let timer = setInterval(function () {
+              if (op >= 1) {
+                clearInterval(timer);
+              }
+              berkeleyDemo.style.opacity = op;
+              berkeleyDemo.style.filter = "alpha(opacity=" + op * 100 + ")";
+              op += op * 0.05;
+            }, 10);
+
+        let berkeleyWeather = document.querySelector('.berkeley-weather-info');
+
+        let op2 = 1;
+        let timer2 = setInterval(function(){
+            if(op2 <= 0.01) {
+                clearInterval(timer2);
+            }
+            berkeleyWeather.style.opacity = op2;
+            berkeleyWeather.style.filter = 'alpha(opacity=' + op2 * 100 + ')';
+            op2 -= op2 * 0.05;
+        }, 10);
+
+            berkeleyWeather.classList.remove("top-show")
     }
     
     function showBerkeleyWeather() {
-        let davisDemo = document.getElementById("berkeley-container");
-            davisDemo.classList.add("top-hide");
-        let davisWeather = document.querySelector('.berkeley-weather-info');
-            davisWeather.classList.add("top-show");
+        let berkeleyDemo = document.getElementById("berkeley-container");
+        
+        let op2 = 1;
+        let timer2 = setInterval(function(){
+            if(op2 <= 0.01) {
+                clearInterval(timer2);
+            }
+            berkeleyDemo.style.opacity = op2;
+            berkeleyDemo.style.filter = 'alpha(opacity=' + op2 * 100 + ')';
+            op2 -= op2 * 0.05;
+        }, 10);
+
+            berkeleyDemo.classList.add("top-hide");
+
+        let berkeleyWeather = document.querySelector('.berkeley-weather-info');
+            berkeleyWeather.classList.add("top-show");
+
+        let op = 0.01;
+        let timer = setInterval(function() {
+            if(op >= 1) {
+                clearInterval(timer);
+            }
+            berkeleyWeather.style.opacity = op;
+            berkeleyWeather.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op += op * 0.05;
+        }, 10);
     }
 
     function showScDemo() {
-        let davisDemo = document.getElementById('sc-container');
-            davisDemo.classList.remove("top-hide")
-        let davisWeather = document.querySelector('.sc-weather-info');
-            davisWeather.classList.remove("top-show")
+        let scDemo = document.getElementById('sc-container');
+            scDemo.classList.remove("top-hide")
+
+            let op = 0.01;
+            let timer = setInterval(function () {
+              if (op >= 1) {
+                clearInterval(timer);
+              }
+              scDemo.style.opacity = op;
+              scDemo.style.filter = "alpha(opacity=" + op * 100 + ")";
+              op += op * 0.05;
+            }, 10);
+
+        let scWeather = document.querySelector('.sc-weather-info');
+
+            let op2 = 1;
+            let timer2 = setInterval(function(){
+                if(op2 <= 0.01) {
+                    clearInterval(timer2);
+                }
+                scWeather.style.opacity = op2;
+                scWeather.style.filter = 'alpha(opacity=' + op2 * 100 + ')';
+                op2 -= op2 * 0.05;
+            }, 10);
+
+        scWeather.classList.remove("top-show")
     }
     
     function showScWeather() {
-        let davisDemo = document.getElementById("sc-container");
-            davisDemo.classList.add("top-hide");
-        let davisWeather = document.querySelector('.sc-weather-info');
-            davisWeather.classList.add("top-show");
+        let scDemo = document.getElementById("sc-container");
+            
+            let op2 = 1;
+            let timer2 = setInterval(function () {
+            if (op2 <= 0.01) {
+                clearInterval(timer2);
+            }
+            scDemo.style.opacity = op2;
+            scDemo.style.filter = "alpha(opacity=" + op2 * 100 + ")";
+            op2 -= op2 * 0.05;
+            }, 10);
+            scDemo.classList.add("top-hide");
+
+        let scWeather = document.querySelector('.sc-weather-info');
+            scWeather.classList.add("top-show");
+
+            let op = 0.01;
+            let timer = setInterval(function() {
+                if(op >= 1) {
+                    clearInterval(timer);
+                }
+                scWeather.style.opacity = op;
+                scWeather.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                op += op * 0.05;
+            }, 10);
     }
 
     function showSbDemo() {
-        let davisDemo = document.getElementById('sb-container');
-            davisDemo.classList.remove("top-hide")
-        let davisWeather = document.querySelector('.sb-weather-info');
-            davisWeather.classList.remove("top-show")
+        let sbDemo = document.getElementById('sb-container');
+            sbDemo.classList.remove("top-hide")
+
+            let op = 0.01;
+            let timer = setInterval(function() {
+                if(op >= 1) {
+                    clearInterval(timer);
+                }
+                sbDemo.style.opacity = op;
+                sbDemo.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                op += op * 0.05;
+            }, 10);
+
+        let sbWeather = document.querySelector('.sb-weather-info');
+            
+        let op2 = 1;
+            let timer2 = setInterval(function () {
+            if (op2 <= 0.01) {
+                clearInterval(timer2);
+            }
+            sbWeather.style.opacity = op2;
+            sbWeather.style.filter = "alpha(opacity=" + op2 * 100 + ")";
+            op2 -= op2 * 0.05;
+            }, 10);
+        
+            sbWeather.classList.remove("top-show")
     }
     
     function showSbWeather() {
-        let davisDemo = document.getElementById("sb-container");
-            davisDemo.classList.add("top-hide");
-        let davisWeather = document.querySelector('.sb-weather-info');
-            davisWeather.classList.add("top-show");
+        let sbDemo = document.getElementById("sb-container");
+
+        let op2 = 1;
+        let timer2 = setInterval(function () {
+          if (op2 <= 0.01) {
+            clearInterval(timer2);
+          }
+          sbDemo.style.opacity = op2;
+          sbDemo.style.filter = "alpha(opacity=" + op2 * 100 + ")";
+          op2 -= op2 * 0.05;
+        }, 10);
+        sbDemo.classList.add("top-hide");
+        
+        let sbWeather = document.querySelector('.sb-weather-info');
+            sbWeather.classList.add("top-show");
+
+            let op = 0.01;
+            let timer = setInterval(function () {
+              if (op >= 1) {
+                clearInterval(timer);
+              }
+              sbWeather.style.opacity = op;
+              sbWeather.style.filter = "alpha(opacity=" + op * 100 + ")";
+              op += op * 0.05;
+            }, 10);
     }
 
     function showLaDemo() {
-        let davisDemo = document.getElementById('la-container');
-            davisDemo.classList.remove("top-hide")
-        let davisWeather = document.querySelector('.la-weather-info');
-            davisWeather.classList.remove("top-show")
+        let laDemo = document.getElementById('la-container');
+            laDemo.classList.remove("top-hide")
+
+            let op = 0.01;
+            let timer = setInterval(function () {
+              if (op >= 1) {
+                clearInterval(timer);
+              }
+              laDemo.style.opacity = op;
+              laDemo.style.filter = "alpha(opacity=" + op * 100 + ")";
+              op += op * 0.05;
+            }, 10);
+            
+        let laWeather = document.querySelector('.la-weather-info');
+        let op2 = 1;
+        let timer2 = setInterval(function () {
+          if (op2 <= 0.01) {
+            clearInterval(timer2);
+          }
+          laWeather.style.opacity = op2;
+          laWeather.style.filter = "alpha(opacity=" + op2 * 100 + ")";
+          op2 -= op2 * 0.05;
+        }, 10);
+
+        laWeather.classList.remove("top-show")
     }
     
     function showLaWeather() {
-        let davisDemo = document.getElementById("la-container");
-            davisDemo.classList.add("top-hide");
-        let davisWeather = document.querySelector('.la-weather-info');
-            davisWeather.classList.add("top-show");
+        let laDemo = document.getElementById("la-container");
+
+            let op2 = 1;
+            let timer2 = setInterval(function () {
+                if (op2 <= 0.01) {
+                clearInterval(timer2);
+                }
+                laDemo.style.opacity = op2;
+                laDemo.style.filter =
+                "alpha(opacity=" + op2 * 100 + ")";
+                op2 -= op2 * 0.05;
+            }, 10);
+            laDemo.classList.add("top-hide");
+
+        let laWeather = document.querySelector('.la-weather-info');
+            laWeather.classList.add("top-show");
+
+            let op = 0.01;
+            let timer = setInterval(function() {
+                if(op >= 1) {
+                    clearInterval(timer);
+                }
+                laWeather.style.opacity = op;
+                laWeather.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                op += op * 0.05;
+            }, 10);
     }
 
     function showRiversideDemo() {
-        let davisDemo = document.getElementById('riverside-container');
-            davisDemo.classList.remove("top-hide")
-        let davisWeather = document.querySelector('.riverside-weather-info');
-            davisWeather.classList.remove("top-show")
+        let riversideDemo = document.getElementById('riverside-container');
+            riversideDemo.classList.remove("top-hide");
+            
+            let op = 0.01;
+            let timer = setInterval(function () {
+              if (op >= 1) {
+                clearInterval(timer);
+              }
+              riversideDemo.style.opacity = op;
+              riversideDemo.style.filter = "alpha(opacity=" + op * 100 + ")";
+              op += op * 0.05;
+            }, 10);
+
+        let riversideWeather = document.querySelector('.riverside-weather-info');
+            let op2 = 1;
+            let timer2 = setInterval(function () {
+            if (op2 <= 0.01) {
+                clearInterval(timer2);
+            }
+            riversideWeather.style.opacity = op2;
+            riversideWeather.style.filter = "alpha(opacity=" + op2 * 100 + ")";
+            op2 -= op2 * 0.05;
+            }, 10);
+            riversideWeather.classList.remove("top-show");
     }
     
     function showRiversideWeather() {
-        let davisDemo = document.getElementById("riverside-container");
-            davisDemo.classList.add("top-hide");
-        let davisWeather = document.querySelector('.riverside-weather-info');
-            davisWeather.classList.add("top-show");
+        let riversideDemo = document.getElementById("riverside-container");
+            let op2 = 1;
+            let timer2 = setInterval(function () {
+                if (op2 <= 0.01) {
+                clearInterval(timer2);
+                }
+                riversideDemo.style.opacity = op2;
+                riversideDemo.style.filter = "alpha(opacity=" + op2 * 100 + ")";
+                op2 -= op2 * 0.05;
+            }, 10);
+            riversideDemo.classList.add("top-hide");
+
+        let riversideWeather = document.querySelector('.riverside-weather-info');
+            riversideWeather.classList.add("top-show");
+
+            let op = 0.01;
+            let timer = setInterval(function () {
+              if (op >= 1) {
+                clearInterval(timer);
+              }
+              riversideWeather.style.opacity = op;
+              riversideWeather.style.filter = "alpha(opacity=" + op * 100 + ")";
+              op += op * 0.05;
+            }, 10);
     }
 
     function showIrvineDemo() {
-        let davisDemo = document.getElementById('irvine-container');
-            davisDemo.classList.remove("top-hide")
-        let davisWeather = document.querySelector('.irvine-weather-info');
-            davisWeather.classList.remove("top-show")
+        let irvineDemo = document.getElementById('irvine-container');
+            irvineDemo.classList.remove("top-hide");
+
+            let op = 0.01;
+            let timer = setInterval(function () {
+              if (op >= 1) {
+                clearInterval(timer);
+              }
+              irvineDemo.style.opacity = op;
+              irvineDemo.style.filter = "alpha(opacity=" + op * 100 + ")";
+              op += op * 0.05;
+            }, 10);
+
+        let irvineWeather = document.querySelector('.irvine-weather-info');
+        let op2 = 1;
+        let timer2 = setInterval(function () {
+            if (op2 <= 0.01) {
+            clearInterval(timer2);
+            }
+            irvineWeather.style.opacity = op2;
+            irvineWeather.style.filter = "alpha(opacity=" + op2 * 100 + ")";
+            op2 -= op2 * 0.05;
+        }, 10);
+            irvineWeather.classList.remove("top-show");
     }
     
     function showIrvineWeather() {
-        let davisDemo = document.getElementById("irvine-container");
-            davisDemo.classList.add("top-hide");
-        let davisWeather = document.querySelector('.irvine-weather-info');
-            davisWeather.classList.add("top-show");
+        let irvineDemo = document.getElementById("irvine-container");
+            let op2 = 1;
+            let timer2 = setInterval(function () {
+                if (op2 <= 0.01) {
+                clearInterval(timer2);
+                }
+                irvineDemo.style.opacity = op2;
+                irvineDemo.style.filter = "alpha(opacity=" + op2 * 100 + ")";
+                op2 -= op2 * 0.05;
+            }, 10);
+            irvineDemo.classList.add("top-hide");
+        let irvineWeather = document.querySelector('.irvine-weather-info');
+            irvineWeather.classList.add("top-show");
+
+            let op = 0.01;
+            let timer = setInterval(function () {
+              if (op >= 1) {
+                clearInterval(timer);
+              }
+              irvineWeather.style.opacity = op;
+              irvineWeather.style.filter = "alpha(opacity=" + op * 100 + ")";
+              op += op * 0.05;
+            }, 10);
     }
 
     function showSdDemo() {
-        let davisDemo = document.getElementById('sd-container');
-            davisDemo.classList.remove("top-hide")
-        let davisWeather = document.querySelector('.sd-weather-info');
-            davisWeather.classList.remove("top-show")
+        let sdDemo = document.getElementById('sd-container');
+            sdDemo.classList.remove("top-hide");
+
+            let op = 0.01;
+            let timer = setInterval(function () {
+              if (op >= 1) {
+                clearInterval(timer);
+              }
+              sdDemo.style.opacity = op;
+              sdDemo.style.filter = "alpha(opacity=" + op * 100 + ")";
+              op += op * 0.05;
+            }, 10);
+
+        let sdWeather = document.querySelector('.sd-weather-info');
+        
+        let op2 = 1;
+        let timer2 = setInterval(function () {
+          if (op2 <= 0.01) {
+            clearInterval(timer2);
+          }
+          sdWeather.style.opacity = op2;
+          sdWeather.style.filter = "alpha(opacity=" + op2 * 100 + ")";
+          op2 -= op2 * 0.05;
+        }, 10);
+            sdWeather.classList.remove("top-show");
     }
     
     function showSdWeather() {
-        let davisDemo = document.getElementById("sd-container");
-            davisDemo.classList.add("top-hide");
-        let davisWeather = document.querySelector('.sd-weather-info');
-            davisWeather.classList.add("top-show");
+        let sdDemo = document.getElementById("sd-container");
+            let op2 = 1;
+            let timer2 = setInterval(function () {
+                if (op2 <= 0.01) {
+                clearInterval(timer2);
+                }
+                sdDemo.style.opacity = op2;
+                sdDemo.style.filter = "alpha(opacity=" + op2 * 100 + ")";
+                op2 -= op2 * 0.05;
+            }, 10);
+            sdDemo.classList.add("top-hide");
+        let sdWeather = document.querySelector('.sd-weather-info');
+            sdWeather.classList.add("top-show");
+            let op = 0.01;
+            let timer = setInterval(function () {
+                if (op >= 1) {
+                clearInterval(timer);
+                }
+                sdWeather.style.opacity = op;
+                sdWeather.style.filter =
+                "alpha(opacity=" + op * 100 + ")";
+                op += op * 0.05;
+            }, 10);
     }
 })
