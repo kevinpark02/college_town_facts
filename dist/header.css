@@ -5,8 +5,8 @@
 
 .main-header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    justify-content: space-between;
     align-items: flex-start;
     width: 100vw;
     background: #ffd500;
@@ -18,6 +18,30 @@
     width: 100%;
     z-index: 100;
 }
+
+.main-header-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    background: #ffd500;
+    padding: 10px 0;
+    padding-left: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.main-header-title a {
+    margin-left: 25px;
+}
+
+.main-header-title:first-child {
+    padding-left: 30px;
+}
+
 
 .main-header h1 {
     color: #02075d;
