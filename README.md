@@ -32,5 +32,9 @@ The project uses the following technologies:
     <img src="./src/image/readme_onscroll_snippet.png">
 * The scrollFunction first declares various components of each school, and I achieved that by using getElementById or querySelector as shown below:
     <img src="./src/image/readme_declare.png">
-* I kept track of the scrollTop value to either add or remove a class that shows the component, which was initially hidden when the page was laoded.
+* I kept track of the scrollTop value to either add or remove different classes to update/show/remove visualization.
     <img src="./src/image/readme_track.png">
+
+## Receiving the live weather update
+* I created a weather class that makes a fetch request to `openweathermap` database that returns the weather information about the city in which each college is located in.
+    <img src="./src/image/readme_weather_request.png">
