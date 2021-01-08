@@ -38,3 +38,7 @@ The project uses the following technologies:
 ## Receiving the live weather update
 * I created a weather class that makes a fetch request to `openweathermap` database that returns the weather information about the city in which each college is located in.
     <img src="./src/image/readme_weather_request.png">
+* I created a user interface (UI) class for each school, which uses the weather information and displays them on the browser.
+    <img src="./src/image/readme_ui.png">
+* The combination of weather class and the UI classes are used to display the weather information.
+    <img src="./src/image/weather_paint.png>
