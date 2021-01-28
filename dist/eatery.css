@@ -21,6 +21,7 @@
 
 .davis-get-restaurants {
     margin: 0 auto;
+    position: relative;
 }
 
 .davis-eatery img {
@@ -60,7 +61,7 @@
     align-items: initial;
     margin-top: 10px;
     /* border: 1px black solid; */
-    height: 330px;
+    height: 250px;
     width: 90%
 }
 
@@ -115,7 +116,7 @@
     align-items: initial;
     margin-top: 10px;
     /* border: 1px black solid; */
-    height: 330px;
+    height: 250px;
     width: 90%
 }
 
@@ -170,7 +171,7 @@
     align-items: initial;
     margin-top: 10px;
     /* border: 1px black solid; */
-    height: 330px;
+    height: 250px;
     width: 90%
 }
 
@@ -225,7 +226,7 @@
     align-items: initial;
     margin-top: 10px;
     /* border: 1px black solid; */
-    height: 330px;
+    height: 250px;
     width: 90%
 }
 
@@ -280,7 +281,7 @@
     align-items: initial;
     margin-top: 10px;
     /* border: 1px black solid; */
-    height: 330px;
+    height: 250px;
     width: 90%
 }
 
@@ -335,7 +336,7 @@
     align-items: initial;
     margin-top: 10px;
     /* border: 1px black solid; */
-    height: 330px;
+    height: 250px;
     width: 90%
 }
 
@@ -390,7 +391,7 @@
     align-items: initial;
     margin-top: 10px;
     /* border: 1px black solid; */
-    height: 330px;
+    height: 250px;
     width: 90%
 }
 
@@ -445,7 +446,7 @@
     align-items: initial;
     margin-top: 10px;
     /* border: 1px black solid; */
-    height: 330px;
+    height: 250px;
     width: 90%
 }
 
