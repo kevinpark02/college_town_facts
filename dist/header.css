@@ -1,6 +1,8 @@
 /* Header */
 .body {
     overflow-y: auto;
+    background: #fbf5ee;
+    background-size: cover;
 }
 
 .main-header {
@@ -60,7 +62,6 @@
 /* Content */
 .content {
     display: flex;
-    background: #fbf5ee;
 }
 
 .sticky + .content {
